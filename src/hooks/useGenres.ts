@@ -1,6 +1,5 @@
 
-import useDate from "./useDate";
-
+import genres from "../data/genres";
 export interface Genre{
     id:number;
     name:string;
@@ -9,6 +8,7 @@ export interface Genre{
 
 
 
-const useGenres = () => useDate<Genre>('/genres')
+const useGenres = () => ({data:genres , isLoading :false , error:null});
+
 
 export default useGenres;
