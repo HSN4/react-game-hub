@@ -1,10 +1,7 @@
 import useDate from "./useDate";
+import { Platform } from "./useGames";
 
-export interface Platform{
-    id:number;
-    name:string;
-    slug:string;
-}
+
 
 
 
